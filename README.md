@@ -22,7 +22,7 @@
 
    - Create a folder in your local machine to clone the repository to.
    - Using using Gitbash / terminal navigate to the folder.
-   - enter the following: git clone 'https://github.com/Luken1990/Hangman.git' then press enter.
+   - Enter the following: git clone 'https://github.com/Luken1990/Hangman.git' then press enter.
 
 <img src="https://user-images.githubusercontent.com/23103970/214530944-af9983e3-17c5-498a-a9b4-0dcd02c57058.JPG" width="450">
 
