@@ -27,7 +27,7 @@
 <img src="https://user-images.githubusercontent.com/23103970/214530944-af9983e3-17c5-498a-a9b4-0dcd02c57058.JPG" width="450">
 
 3. Install NodeJs: https://nodejs.org/en/download/
-4. Open your IDe, navigate to the folder/file.
+4. Open your IDE, navigate to the folder/file.
 5. Install react-redux & toolkit: npm install --save @reduxjs/toolkit react-redux
 6. Run the program enter: npm start 
 
