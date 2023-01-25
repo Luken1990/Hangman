@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useSelector, useDispatch } from 'react-redux';
+import dictionary from './data/dictionary';
+import KeyBoard from './components/Keyboard';
+import Word from './components/Word';
+import Man from './components/Man';
+import Heading from './components/Heading';
+import { randomWord } from '../src/store/hangmanReducers';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const dispatch = useDispatch();
+  dispatch(randomWord(dictionary));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <div className="main-container">
+        <Heading />
+        <Man />
+        <Word />
+        <KeyBoard />
+      </div>
+    </main>
   );
 }
 

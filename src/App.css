@@ -1,38 +1,110 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(91, 115, 134);
+}
+
+.main-container {
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+}
+
+.word-container {
+  margin-bottom: 50px;
+}
+
+.word-container span {
+  font-size: 60px;
+}
+
+.word-container > span {
+  border-bottom: 3px solid black;
+  margin-left: 10px;
+}
+
+.keyboard-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.keyboard-container button {
+  aspect-ratio: 1/1;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  text-transform: uppercase;
+  margin: 0 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scores,
+.btn-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-container button {
+  margin-top: 0px;
+  margin-right: 0 !important;
+  margin-left: 0;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.win {
+  color: darkgreen;
+}
+
+.lose {
+  color: crimson;
+}
+
+
+.hint{
+  max-width: 400px;
+  background-color: #fff;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hint p{
+  margin: 0;
+}
+
+.btn-group{
+  margin-top: 50px;
+  float: right;
+}
+
+.btn-group button {
+  margin-right: 10px;
 }
